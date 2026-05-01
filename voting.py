@@ -2,7 +2,7 @@ from tkinter import *
 from vote_logic import *
 
 class Gui:
-    def __init__(self, window):
+    def __init__(self, window) -> None:
         self.window = window
 
         #TITLE
@@ -77,9 +77,9 @@ class Gui:
 
     def result(self) -> None:
         """
-        Function is used with the total button, when clicked, the function runs the total function pull count 
-        of total votes for each canidate and total of all votes submitted 
-        and stores the received values in variables jane, john, and total_count
+        Function is used with the total button, when clicked, the function runs the total() function which pulls the count 
+        of total votes for each canidate and total of all votes submitted.
+        It then stores the received values in variables jane, john, and total_count
         Finally it displays these values back to the user
         """
         jane, john, total_count = total()
